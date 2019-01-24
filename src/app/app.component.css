@@ -1,0 +1,31 @@
+dt {
+  font-size: 25pt;
+}
+
+.ice-cream-brand {
+  font-size: 20pt;
+  color: grey;
+}
+
+ul {
+  padding: 0;
+}
+
+.flavor-list {
+  margin-bottom: -25px;
+}
+
+.ice-cream-flavor {
+  list-style-type: none;
+  color: grey;
+  margin: 5px;
+}
+
+.ice-cream-price {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.ice-cream-info {
+  margin: 5px;
+}
