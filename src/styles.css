@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+  background-image: url('/../../assets/img/background-ice-cream.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 75vh;
+}
+
+body {
+  /* background-image: */
+  background:  #B0683F;
+  background-image:
+
+  radial-gradient(#FFD57F 20%, transparent 0),
+  radial-gradient(#FAB63B 20%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  /* (#ff9d35, #ff6b35, #ff3835); */
+}
