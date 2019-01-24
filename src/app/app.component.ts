@@ -18,9 +18,14 @@ export class AppComponent {
     new IceCreamTub('Neopolitan', 6, [new Content('Vanilla'),new Content('Chocolate'),new Content('Strawberry')], 'Häagen-Dazs')
   ];
 
-  clickEmployee() {
+  grantAccess() {
     this.employeeAccess = true;
-    this.employeeAccess.emit();
+    console.log('employee access granted: ' + this.employeeAccess);
+    // this.employeeAccess.emit();
+  }
+
+  finishEditing() {
+    this.employeeAccess = false;
   }
 
 }

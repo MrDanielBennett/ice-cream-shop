@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <h3>{{title}}</h3>
+  <button (click)="grantAccess()">Grant Access</button>
   <dl>
     <div *ngFor="let iceCreamTub of iceCreamTubs">
       <dt>{{iceCreamTub.name}} <span class="ice-cream-brand">{{iceCreamTub.brand}}</span></dt>
@@ -17,6 +18,8 @@
     </div>
   </dl>
 
-  <app-ice-cream-editor (clickDone)="finishEditing()" [childIceCreamTubs]="iceCreamTubs"></app-ice-cream-editor>
+  <div *ngIf="employeeAccess">
+    <app-ice-cream-editor (clickDone)="finishEditing()" [childIceCreamTubs]="iceCreamTubs">Loading...</app-ice-cream-editor>
+  </div>
 
 </div>

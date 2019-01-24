@@ -8,13 +8,11 @@ import { IceCreamTub } from '../models/ice-cream-tub.model';
 })
 export class IceCreamEditorComponent {
   @Input() childIceCreamTubs: IceCreamTub[];
-  @Input() employeeAccess: boolean;
   @Output() clickDone = new EventEmitter();
 
   constructor() { }
 
   finishEditing() {
-    this.employeeAccess = false;
     this.clickDone.emit();
   }
 
