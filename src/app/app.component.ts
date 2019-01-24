@@ -16,6 +16,7 @@ export class AppComponent {
     new IceCreamTub('Chocolate', 3.5, [new Content('Chocolate')], 'Tillamook'),
     new IceCreamTub('Strawberry', 3.5, [new Content('Strawberry')], 'Beyers'),
     new IceCreamTub('Neopolitan', 6, [new Content('Vanilla'),new Content('Chocolate'),new Content('Strawberry')], 'Häagen-Dazs')
+    new IceCreamTub('Spiked Vanilla', 3.5, [new Content('Vanilla'), new Content('Vodka', 74.8)], 'Umpqua'),
   ];
 
   grantAccess() {

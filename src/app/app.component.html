@@ -12,6 +12,7 @@
             <li *ngFor="let content of iceCreamTub.contents" class="ice-cream-content">{{content.ingredient}}</li>
           </ul>
           <br>
+          <p *ngIf="iceCreamTub.alchoholPercent>0">Alchohol Percent: {{iceCreamTub.alchoholPercent}}</p>
           <p class="ice-cream-price">$ {{iceCreamTub.displayPrice()}}</p>
         </div>
       </dd>
