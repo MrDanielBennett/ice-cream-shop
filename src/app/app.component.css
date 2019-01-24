@@ -15,11 +15,11 @@ ul li {
   display: inline-block;
 }
 
-.flavor-list {
+.content-list {
   margin-bottom: -25px;
 }
 
-.ice-cream-flavor {
+.ice-cream-content {
   list-style-type: none;
   color: grey;
   margin: 5px;

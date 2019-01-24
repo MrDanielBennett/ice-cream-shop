@@ -7,8 +7,8 @@
       <dd>
         <h5>Flavor(s)</h5>
         <div class="ice-cream-info">
-          <ul class="flavor-list">
-            <li *ngFor="let flavor of iceCreamTub.flavors" class="ice-cream-flavor">{{flavor}}</li>
+          <ul class="content-list">
+            <li *ngFor="let content of iceCreamTub.contents" class="ice-cream-content">{{content.ingredient}}</li>
           </ul>
           <br>
           <p class="ice-cream-price">$ {{iceCreamTub.displayPrice()}}</p>
@@ -16,4 +16,7 @@
       </dd>
     </div>
   </dl>
+
+  <app-ice-cream-editor (clickDone)="finishEditing()" [childIceCreamTubs]="iceCreamTubs"></app-ice-cream-editor>
+
 </div>
