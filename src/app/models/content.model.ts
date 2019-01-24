@@ -1,3 +1,3 @@
 export class Content {
-  constructor(public ingredient: string, public alchoholDecimalPercent: number = 0){}
+  constructor(public ingredient: string, public alchoholLiquidOz: number = 0){}
 }
