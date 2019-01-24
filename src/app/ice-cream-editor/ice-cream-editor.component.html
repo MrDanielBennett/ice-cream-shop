@@ -1,3 +1,21 @@
-<p>
-  ice-cream-editor works!
-</p>
+<div class="employee" *ngIf="employeeAccess">
+
+  <h3>Store Editor</h3>
+
+  <dl>
+    <div *ngFor="let iceCreamTub of childIceCreamTubs; index as thisTub">
+      <dt><input [(ngModel)]="childIceCreamTubs[thisTub].name"><input [(ngModel)]="childIceCreamTubs[thisTub].brand"></dt>
+      <dd>
+        <h5>content(s)</h5>
+        <div class="ice-cream-info">
+          <ul class="content-list">
+            <input *ngFor="let content of iceCreamTub.contents; index as thisContent" [(ngModel)]="childIceCreamTubs[thisTub].contents[thisContent].ingredient">
+          </ul>
+          <br>
+          <input [(ngModel)]="childIceCreamTubs[thisTub].price">
+        </div>
+      </dd>
+    </div>
+  </dl>
+  <button(click)="finishEditing()">Done Editing</button>
+</div>
