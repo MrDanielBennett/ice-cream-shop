@@ -11,6 +11,10 @@ ul {
   padding: 0;
 }
 
+ul li {
+  display: inline-block;
+}
+
 .flavor-list {
   margin-bottom: -25px;
 }

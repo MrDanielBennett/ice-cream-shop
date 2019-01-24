@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { IceCreamEditorComponent } from './ice-cream-editor/ice-cream-editor.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IceCreamEditorComponent
   ],
   imports: [
     BrowserModule

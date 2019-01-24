@@ -7,13 +7,13 @@ import { IceCreamTub } from './models/ice-cream-tub.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Dannniel & Michhhael: Ice Cream Bar & Fry';
 
   iceCreamTubs: IceCreamTub[] = [
-    new IceCreamTub('Vanilla', 3.50, ['Vanilla'], 'Umpqua'),
-    new IceCreamTub('Chocolate', 3.50, ['Chocolate'], 'Tillamook'),
-    new IceCreamTub('Strawberry', 3.50, ['Strawberry'], 'Tillamook'),
-    new IceCreamTub('Neopolitan', 3.50, ['Chocolate','Vanilla','Strawberry'], 'Tillamook'),
+    new IceCreamTub('Vanilla', 3.5, ['Vanilla'], 'Umpqua'),
+    new IceCreamTub('Chocolate', 3.5, ['Chocolate'], 'Tillamook'),
+    new IceCreamTub('Strawberry', 3.5, ['Strawberry'], 'Beyers'),
+    new IceCreamTub('Neopolitan', 6, ['Chocolate','Vanilla','Strawberry'], 'Häagen-Dazs')
   ];
 
 }
