@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .container{
-  background-image: url('/../../assets/img/background-ice-cream.jpeg');
+  background-image: linear-gradient(#FFD57F, #FAB63B);
+  /* background-image: url('/../../assets/img/background-ice-cream.jpeg');
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 75vh;
+  background-size: cover; */
+
 }
 
 body {
