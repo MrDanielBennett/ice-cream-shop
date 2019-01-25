@@ -1,26 +1,32 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <h3>{{title}}</h3>
-  <button (click)="grantAccess()">Grant Access</button>
-  <dl>
-    <div *ngFor="let iceCreamTub of iceCreamTubs">
-      <dt>{{iceCreamTub.name}} <span class="ice-cream-brand">{{iceCreamTub.brand}}</span></dt>
-      <dd>
-        <h5>Flavor(s)</h5>
-        <div class="ice-cream-info">
-          <ul class="content-list">
-            <li *ngFor="let content of iceCreamTub.contents" class="ice-cream-content">{{content.ingredient}}</li>
-          </ul>
-          <br>
-          <p *ngIf="iceCreamTub.alchoholPercent>0">Alchohol Percent: {{iceCreamTub.alchoholPercent}}</p>
-          <p class="ice-cream-price">$ {{iceCreamTub.displayPrice()}}</p>
+  <div class="row">
+
+    <div class="col-md-6">
+      <button (click)="grantAccess()">Grant Access</button>
+      <dl>
+        <div *ngFor="let iceCreamTub of iceCreamTubs">
+          <dt>{{iceCreamTub.name}} <span class="ice-cream-brand">{{iceCreamTub.brand}}</span></dt>
+          <dd>
+            <h5>Flavor(s)</h5>
+            <div class="ice-cream-info">
+              <ul class="content-list">
+                <li *ngFor="let content of iceCreamTub.contents" class="ice-cream-content">{{content.ingredient}}</li>
+              </ul>
+              <br>
+              <p *ngIf="iceCreamTub.alchoholPercent>0">Alchohol Percent: {{iceCreamTub.alchoholPercent}}</p>
+              <p class="ice-cream-price">$ {{iceCreamTub.displayPrice()}}</p>
+            </div>
+          </dd>
         </div>
-      </dd>
+      </dl>
     </div>
-  </dl>
-
-  <div *ngIf="employeeAccess">
-    <app-ice-cream-editor (clickDone)="finishEditing()" [childIceCreamTubs]="iceCreamTubs">Loading...</app-ice-cream-editor>
+    <div class="col-md-6">
+      <div *ngIf="employeeAccess">
+        <app-ice-cream-editor (clickDone)="finishEditing()" [childIceCreamTubs]="iceCreamTubs">Loading...</app-ice-cream-editor>
+        <app-new-ice-cream></app-new-ice-cream>
+      </div>
+    </div>
   </div>
-
 </div>

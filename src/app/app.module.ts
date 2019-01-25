@@ -4,12 +4,16 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { IceCreamEditorComponent } from './ice-cream-editor/ice-cream-editor.component';
+import { NewIceCreamComponent } from './new-ice-cream/new-ice-cream.component';
+import { NewContentComponent } from './new-content/new-content.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    IceCreamEditorComponent
+    IceCreamEditorComponent,
+    NewIceCreamComponent,
+    NewContentComponent
   ],
   imports: [
     BrowserModule,
